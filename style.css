@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', Sans-serif;
+    line-height: 2rem;
+    background-color: #121e27;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color:steelblue;
+}
+
+
+    /* NAVBAR */
+.navbar{
+    background-color: rgba(25, 27, 33, 0.725);
+    color: #fff;
+    padding: 1.2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    margin-right: 1.1em;
+}
+
+.home-btn{
+    background-color: steelblue;
+    padding: 0 .4rem;
+    border-radius: 25px;
+}
+
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    color: steelblue;
+}
+
+.home-btn a:hover{
+    color: #121e27;
+}
+
+
+     /* HOME */
+main{
+    background-color: #121e27;
+}
+
+main .container{
+    width: 85%;
+    margin: 0 auto 3rem;
+}
+
+.intro{
+    font-size: 3rem;
+    margin-top: 5.7rem;
+    padding-top: 2em;
+}
+h1 span{
+    color: steelblue;
+}
+
+.icons{
+    display: block;
+    font-size: 2rem;
+    padding-top: 1.2em;
+    margin: 1rem 0;
+}
+
+.icon{
+    margin-right: 1.2rem;
+}
+
+.home p{
+    max-width: 30rem;
+}
+
+        /* ABOUT */
+
+
+.about{
+    background-color: #ccc;
+    color: #121e27;
+    padding: 3rem 0;
+
+}
+
+.about .container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about p{
+    max-width: 40rem;
+
+}
+
+
+
+        /* SERVICES */
+
+.services{
+    padding: 3rem 0;
+}
+.services .container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    flex-direction: 1;
+    margin: 1.5rem;
+    color: #121e27;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.9);
+}
+
+.card i{
+    margin-right: .85rem;
+}
+
+@media screen  and (max-width:1024px){
+    .cards{
+        display: block;
+    }
+
+    .card{
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+}
+
+
+
+
+        /* CONTACT */
+
+
+.contact{
+    padding: 1.7rem 0;
+}
+.title{
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.contact .container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact-info .box{
+    padding: 1rem 0;
+    display: flex;
+}
+
+.container .contact-info .box .icon{
+    background-color: steelblue;
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+.container .contact-info .box .text h3{
+    color: steelblue;
+    
+}
+
+.contact-form{
+    width: 40%;
+    padding: 1.5rem;
+    background-color: steelblue;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.contact-form .input-box{  
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-form .input-box input, textarea{
+    width: 100%;
+    padding: .85rem 0;
+    font-size: 1rem;
+    margin: .7rem 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px #121e27 solid;
+    background-color: steelblue;
+    resize: none;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px steelblue inset;
+}
+
+::placeholder{
+    color: #121e27;
+}
+
+.contact-form .input-box .submit-btn{
+    width: 25%;
+    background-color: #121e27;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px) {
+    .contact .container{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container .contact-info{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact-form{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    
+}
+
+
+
+footer{
+    background-color: #fff;
+    color: #121e27;
+    padding: 1.6rem 0;
+    
+}
+
+footer h4{
+    text-align: center;
+}
+
